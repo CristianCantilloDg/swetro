@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Swetro</title>
+    <link rel="stylesheet" href="./main.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+    <script src="./main.js" defer></script>
+</head>
+<body>
+    <header class="sw-header">
+        <span class="material-symbols-outlined sw-header__menu">menu</span>
+        <img src="./assets/logo-white.svg" alt="Logo" class="sw-header__logo">
+    </header>
+    <div class="sw-head dark">
+        <h1 class="sw-title">Meta semanal</h1>
+        <nav class="sw-nav">
+            <a href="#" class="sw-nav__item">Inicio</a>
+            <p class="sw-nav__divider">></p>
+            <a href="#" class="sw-nav__item active">Meta semanal</a>
+        </nav>
+    </div>
+    <section class="sw-week-graphic">
+        <div class="sw-week-changer" name="date-changer">
+            <button class="material-symbols-outlined sw-week-changer__button" name="date-prev">keyboard_double_arrow_left</button>
+            <div class="sw-week-changer__info">
+                <h3 class="sw-week-changer__title" name="date-week">Semana #1</h3>
+                <p class="sw-week-changer__date" name="date-range">Feb 5 - Feb 11</p>
+            </div>
+            <button class="material-symbols-outlined sw-week-changer__button" name="date-next">keyboard_double_arrow_right</button>
+        </div>
+        <div class="sw-circle" name="circle-graphic">
+            <p class="sw-circle__label left">0</p>
+            <p class="sw-circle__label right">150</p>
+            <svg class="sw-circle__svg" name="svg-base" width="200" height="200" viewBox="0 0 200 200" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <circle cx="100" cy="100" r="92" stroke="white" stroke-width="16" opacity="0.25" />
+            </svg>
+            <svg class="sw-circle__svg" name="svg-value" width="200" height="200" viewBox="0 0 200 200" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <circle cx="100" cy="100" r="92" stroke="#CAFF00" stroke-width="16" />
+            </svg>
+            <div class="sw-circle__info">
+                <div class="sw-circle__info-values">
+                    <p class="sw-circle__info__current" name="week-minutes">90</p>
+                    <p class="sw-circle__info__separator">|</p>
+                    <p class="sw-circle__info__total">150</p>
+                </div>
+                <p class="sw-circle__info-label">Minutos realizados</p>
+            </div>
+        </div>
+        <p class="sw-week-graphic__tip" name="week-tip">Tip: empieza a realizar actividades físicas para completar tu meta semanal</p>
+        <button class="sw-week-graphic__streaks">
+            <div class="sw-week-graphic__streaks-content">
+                <p class="sw-week-graphic__streaks-label">Llevas <span class="sw-week-graphic__streaks-value" name="streaks-count">3 semanas</span> en racha</p>
+                <span class="material-symbols-outlined sw-week-graphic__streaks-icon">arrow_right_alt</span>
+            </div>
+        </button>
+    </section>
+    <section class="sw-week-activities">
+        <h2 class="sw-title">Tu actividad esta última semana:</h2>
+        <div class="sw-week-activities__list" name="activities-list">
+            <!-- Injected via JS -->
+        </div>
+    </section>
+    <div class="sw-spinner" name="spinner">
+        <img src="./assets/logo-white.svg" alt="Logo" class="sw-spinner__logo">
+        <span class="material-symbols-outlined sw-spinner__icon">progress_activity</span>
+    </div>
+</body>
+</html>
